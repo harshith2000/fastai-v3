@@ -1,15 +1,18 @@
 <html lang='en'>
 <head>
   <meta charset='utf-8'>
-  <link rel='stylesheet' href='../static/style.css'>
+  <link rel='stylesheet' href='../static/style2.css'>
   <script src='../static/client.js'></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Spartan&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="background-image: url(images/eyeback.jpg);" >
 <div>
   <div class='center'>
-    <div class='title'>Classify EYE DISEASES</div>
-    <p>
-      Use images of <strong>PINK</strong> eye, <strong>JAUNDICED</strong> eye, <strong>NORMAL</strong> eye.
+    <div class='title'> <h1>CLASSIFY EYE DISEASES</h1></div>
+    <p class='para'>
+      Use images of <strong>RED-EYES</strong>, <strong>JAUNDICED-EYES</strong> and <strong>NORMAL-EYES</strongs>.
     </p>
     <div class='content'>
       <div class='no-display'>
@@ -20,7 +23,7 @@
                accept='image/*'
                onchange='showPicked(this)'>
       </div>
-      <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+      <button class='choose-file-button selectimg'  type='button' onclick='showPicker()'>Select Image</button>
       <div class='upload-label'>
         <label id='upload-label'>No file chosen</label>
       </div>
@@ -28,10 +31,13 @@
         <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
       </div>
       <div class='analyze'>
-        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+        <button id='analyze-button' class='analyze-button selectimg' type='button' onclick='analyze()'>Analyze</button>
       </div>
       <div class='result-label'>
         <label id='result-label'></label>
+      </div>
+      <div class='result'>
+        <a href="result"></a>
       </div>
     </div>
   </div>
